@@ -1,11 +1,178 @@
 <!DOCTYPE html>
-<htm1>
-    <head>
-        <title>portofolio</title>
-    <head>
-        <body>
-       <h1>ISSO é um título</h1>
-        <p>ISSO é um parágrafo</p>
-        <img src="html.png" alt="logo do HTML 5">
-     </body>
-    </htm1>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo do Futsal</title>
+    <style>
+        /* Estilo geral */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #1a73e8;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        /* Menu de navegação */
+        nav {
+            background-color: #1565c0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #0d47a1;
+        }
+
+        /* Seção de destaques */
+        .destaques {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .destaque {
+            background-color: #fff;
+            margin: 15px;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+            width: 300px;
+            text-align: center;
+        }
+
+        .destaque img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        /* Botão */
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #1a73e8;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background-color: #1565c0;
+        }
+
+        /* Galeria */
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .galeria img {
+            width: 250px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+
+        .galeria img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #1a73e8;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+
+        /* Seções gerais */
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mundo do Futsal</h1>
+        <p>Paixão, técnicas e notícias sobre futsal</p>
+    </header>
+
+    <nav>
+        <a href="#destaques">Destaques</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <section id="destaques" class="destaques">
+        <div class="destaque">
+            <img src="https://www.pngmart.com/files/23/Futsal-Ball-PNG-Image.png" alt="Notícia 1">
+            <h2>Campeonato Nacional</h2>
+            <p>Confira os resultados da última rodada do campeonato nacional de futsal.</p>
+            <a href="#" class="btn">Leia Mais</a>
+        </div>
+        <div class="destaque">
+            <img src="https://www.pngmart.com/files/23/Futsal-Player-PNG-Image.png" alt="Notícia 2">
+            <h2>Dicas de Treino</h2>
+            <p>Aprenda técnicas avançadas para melhorar sua performance no futsal.</p>
+            <a href="#" class="btn">Leia Mais</a>
+        </div>
+        <div class="destaque">
+            <img src="https://www.pngmart.com/files/23/Futsal-Goal-PNG-Image.png" alt="Notícia 3">
+            <h2>Melhores Goleiros</h2>
+            <p>Conheça os goleiros que mais se destacaram nesta temporada.</p>
+            <a href="#" class="btn">Leia Mais</a>
+        </div>
+    </section>
+
+    <section id="galeria" class="galeria">
+        <img src="https://www.pngmart.com/files/23/Futsal-Court-PNG-Image.png" alt="Galeria 1">
+        <img src="https://www.pngmart.com/files/23/Futsal-Action-PNG-Image.png" alt="Galeria 2">
+        <img src="https://www.pngmart.com/files/23/Futsal-Kick-PNG-Image.png" alt="Galeria 3">
+    </section>
+
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>Mundo do Futsal é um site dedicado a todos os amantes do futsal, trazendo notícias, dicas de treino, entrevistas e muito mais.</p>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Envie suas dúvidas e sugestões para: contato@mundodofutsal.com</p>
+    </section>
+
+    <footer>
+        &copy; 2026 Mundo do Futsal. Todos os direitos reservados.
+    </footer>
+
+</body>
+</html>
